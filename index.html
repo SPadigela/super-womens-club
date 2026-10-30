@@ -5,7 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Super Women's Club | Learn, Grow & Empower</title>
+<title>Super Women's Club | Empowering Women</title>
 
 <style>
 * {
@@ -17,47 +17,50 @@
 }
 
 body {
-    background: #f4f8ff;
-    color: #183153;
-    line-height: 1.6;
+    background: #fff7fa;
+    color: #393039;
+    line-height: 1.7;
 }
 
-/* Navigation */
+/* HEADER */
 header {
-    background: #ffffff;
+    background: white;
     padding: 18px 7%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+    box-shadow: 0 3px 12px rgba(200,70,120,0.12);
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 .logo {
-    color: #1261b0;
+    color: #d63384;
     font-size: 25px;
     font-weight: bold;
 }
 
 nav a {
     text-decoration: none;
-    color: #183153;
+    color: #444;
     margin: 10px;
     font-weight: bold;
 }
 
 nav a:hover {
-    color: #1686df;
+    color: #e83e8c;
 }
 
-/* Hero */
+/* HERO */
 .hero {
-    min-height: 520px;
+    min-height: 550px;
     display: flex;
     align-items: center;
     padding: 60px 8%;
     background:
-    linear-gradient(90deg, rgba(5,39,85,.90), rgba(5,39,85,.35)),
+    linear-gradient(90deg, rgba(105,15,65,.85), rgba(105,15,65,.25)),
     url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1800&q=85');
     background-size: cover;
     background-position: center;
@@ -81,28 +84,30 @@ nav a:hover {
 
 .btn {
     display: inline-block;
-    background: #ffffff;
-    color: #1261b0;
+    background: #e83e8c;
+    color: white;
     padding: 13px 25px;
     border-radius: 30px;
     text-decoration: none;
     font-weight: bold;
     margin: 5px;
+    transition: .3s;
 }
 
 .btn:hover {
-    background: #dcecff;
+    background: #b91d65;
+    transform: translateY(-2px);
 }
 
-/* General sections */
+/* GENERAL SECTIONS */
 section {
-    padding: 65px 8%;
+    padding: 70px 8%;
 }
 
 .section-title {
     text-align: center;
-    color: #1261b0;
-    font-size: 32px;
+    color: #d63384;
+    font-size: 34px;
     margin-bottom: 15px;
 }
 
@@ -110,10 +115,10 @@ section {
     text-align: center;
     max-width: 750px;
     margin: 0 auto 35px;
-    color: #52657d;
+    color: #695b64;
 }
 
-/* About */
+/* ABOUT */
 .about {
     display: flex;
     align-items: center;
@@ -124,8 +129,8 @@ section {
 .about img {
     width: 100%;
     max-width: 460px;
-    border-radius: 15px;
-    object-fit: cover;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px rgba(214,51,132,.15);
 }
 
 .about-content {
@@ -134,13 +139,14 @@ section {
 }
 
 .about-content h2 {
-    color: #1261b0;
+    color: #d63384;
+    font-size: 30px;
     margin-bottom: 15px;
 }
 
-/* Programs */
+/* PROGRAMS */
 .programs {
-    background: #eaf3ff;
+    background: #ffeaf3;
 }
 
 .cards {
@@ -151,55 +157,63 @@ section {
 
 .card {
     background: white;
-    padding: 25px;
-    border-radius: 15px;
+    padding: 30px 22px;
+    border-radius: 18px;
     text-align: center;
-    box-shadow: 0 5px 18px rgba(0,0,0,.07);
+    box-shadow: 0 5px 18px rgba(214,51,132,.10);
+    transition: .3s;
+    border-bottom: 4px solid #f4a3c5;
+}
+
+.card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 8px 22px rgba(214,51,132,.18);
 }
 
 .card h3 {
-    color: #1261b0;
+    color: #d63384;
     margin: 15px 0;
 }
 
 .card .emoji {
-    font-size: 42px;
+    font-size: 45px;
 }
 
-/* Empowerment */
+/* EMPOWERMENT */
 .empower {
-    background: #ffffff;
+    background: white;
     text-align: center;
 }
 
 .empower h2 {
-    color: #1261b0;
+    color: #d63384;
     font-size: 32px;
     margin-bottom: 20px;
 }
 
-/* Gallery */
+/* GALLERY */
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-    gap: 18px;
+    gap: 20px;
 }
 
 .gallery-grid img {
     width: 100%;
-    height: 250px;
+    height: 260px;
     object-fit: cover;
-    border-radius: 12px;
-    transition: transform .3s;
+    border-radius: 16px;
+    transition: .3s;
+    box-shadow: 0 5px 15px rgba(214,51,132,.12);
 }
 
 .gallery-grid img:hover {
-    transform: scale(1.03);
+    transform: scale(1.04);
 }
 
-/* Contact */
+/* CONTACT */
 .contact {
-    background: #eaf3ff;
+    background: #ffeaf3;
     text-align: center;
 }
 
@@ -208,7 +222,8 @@ section {
     max-width: 650px;
     margin: auto;
     padding: 35px;
-    border-radius: 15px;
+    border-radius: 18px;
+    box-shadow: 0 5px 20px rgba(214,51,132,.10);
 }
 
 .contact-box p {
@@ -216,22 +231,27 @@ section {
     font-size: 17px;
 }
 
-.contact-box a {
-    color: #1261b0;
+.contact-box a:not(.btn) {
+    color: #d63384;
     text-decoration: none;
     font-weight: bold;
 }
 
-/* Footer */
+/* FOOTER */
 footer {
-    background: #103d72;
+    background: #a51f5d;
     color: white;
     text-align: center;
-    padding: 25px;
+    padding: 30px;
 }
 
-/* Mobile */
+footer h3 {
+    margin-bottom: 8px;
+}
+
+/* MOBILE RESPONSIVE */
 @media(max-width: 768px) {
+
     header {
         justify-content: center;
         gap: 12px;
@@ -259,6 +279,10 @@ footer {
     section {
         padding: 45px 6%;
     }
+
+    .section-title {
+        font-size: 28px;
+    }
 }
 </style>
 </head>
@@ -267,7 +291,8 @@ footer {
 
 <!-- HEADER -->
 <header>
-    <div class="logo">💙 Super Women's Club</div>
+
+    <div class="logo">💗 Super Women's Club</div>
 
     <nav>
         <a href="#home">Home</a>
@@ -276,11 +301,14 @@ footer {
         <a href="#gallery">Gallery</a>
         <a href="#contact">Contact</a>
     </nav>
+
 </header>
 
 <!-- HOME -->
 <div class="hero" id="home">
+
     <div class="hero-content">
+
         <h1>Empowering Women Through Education & Technology</h1>
 
         <p>
@@ -290,18 +318,27 @@ footer {
         </p>
 
         <a href="#programs" class="btn">Explore Programs</a>
-        <a href="#contact" class="btn">Join Our Community</a>
+
+        <a href="#contact" class="btn"
+        style="background:white;color:#d63384;">
+        Join Our Community
+        </a>
+
     </div>
+
 </div>
 
 <!-- ABOUT -->
 <section id="about">
+
     <div class="about">
+
         <img
         src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=900&q=85"
         alt="Women collaborating and learning together">
 
         <div class="about-content">
+
             <h2>About Super Women's Club</h2>
 
             <p>
@@ -324,8 +361,11 @@ footer {
             Our mission is to create a supportive community
             where women inspire and empower one another.
             </p>
+
         </div>
+
     </div>
+
 </section>
 
 <!-- PROGRAMS -->
@@ -377,12 +417,13 @@ footer {
         </div>
 
     </div>
+
 </section>
 
 <!-- EMPOWERMENT -->
 <section class="empower">
 
-    <h2>Every Woman Has the Power to Shine!</h2>
+    <h2>Every Woman Has the Power to Shine! 💗</h2>
 
     <p>
     Our vision is to empower women with knowledge,
@@ -391,7 +432,7 @@ footer {
 
     <br>
 
-    <h3 style="color:#1261b0;">
+    <h3 style="color:#d63384;">
     Learn Together | Grow Together | Succeed Together
     </h3>
 
@@ -422,6 +463,7 @@ footer {
         alt="Women learning together">
 
     </div>
+
 </section>
 
 <!-- CONTACT -->
@@ -446,25 +488,27 @@ footer {
         </a>
         </p>
 
-        <p>💙 Let's build a stronger and empowered community!</p>
+        <p>💗 Let's build a stronger and empowered community!</p>
 
         <a class="btn"
-        style="background:#1261b0;color:white;"
-        href="https://wa.me/1234598765"
+        href="https://wa.me/911234598765"
         target="_blank">
         Contact on WhatsApp
         </a>
 
     </div>
+
 </section>
 
 <!-- FOOTER -->
 <footer>
-    <h3>💙 Super Women's Club</h3>
+
+    <h3>💗 Super Women's Club</h3>
 
     <p>Learn | Empower | Inspire | Achieve</p>
 
     <p>© 2026 Super Women's Club. All Rights Reserved.</p>
+
 </footer>
 
 </body>
