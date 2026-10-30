@@ -1,0 +1,471 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Super Women's Club | Learn, Grow & Empower</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #f4f8ff;
+    color: #183153;
+    line-height: 1.6;
+}
+
+/* Navigation */
+header {
+    background: #ffffff;
+    padding: 18px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+}
+
+.logo {
+    color: #1261b0;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+nav a {
+    text-decoration: none;
+    color: #183153;
+    margin: 10px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #1686df;
+}
+
+/* Hero */
+.hero {
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    padding: 60px 8%;
+    background:
+    linear-gradient(90deg, rgba(5,39,85,.90), rgba(5,39,85,.35)),
+    url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?auto=format&fit=crop&w=1800&q=85');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 19px;
+    margin-bottom: 25px;
+}
+
+.btn {
+    display: inline-block;
+    background: #ffffff;
+    color: #1261b0;
+    padding: 13px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 5px;
+}
+
+.btn:hover {
+    background: #dcecff;
+}
+
+/* General sections */
+section {
+    padding: 65px 8%;
+}
+
+.section-title {
+    text-align: center;
+    color: #1261b0;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.section-desc {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto 35px;
+    color: #52657d;
+}
+
+/* About */
+.about {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.about img {
+    width: 100%;
+    max-width: 460px;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.about-content {
+    flex: 1;
+    min-width: 260px;
+}
+
+.about-content h2 {
+    color: #1261b0;
+    margin-bottom: 15px;
+}
+
+/* Programs */
+.programs {
+    background: #eaf3ff;
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 5px 18px rgba(0,0,0,.07);
+}
+
+.card h3 {
+    color: #1261b0;
+    margin: 15px 0;
+}
+
+.card .emoji {
+    font-size: 42px;
+}
+
+/* Empowerment */
+.empower {
+    background: #ffffff;
+    text-align: center;
+}
+
+.empower h2 {
+    color: #1261b0;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+/* Gallery */
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+}
+
+.gallery-grid img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 12px;
+    transition: transform .3s;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.03);
+}
+
+/* Contact */
+.contact {
+    background: #eaf3ff;
+    text-align: center;
+}
+
+.contact-box {
+    background: white;
+    max-width: 650px;
+    margin: auto;
+    padding: 35px;
+    border-radius: 15px;
+}
+
+.contact-box p {
+    margin: 15px;
+    font-size: 17px;
+}
+
+.contact-box a {
+    color: #1261b0;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Footer */
+footer {
+    background: #103d72;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+/* Mobile */
+@media(max-width: 768px) {
+    header {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 6px;
+        font-size: 14px;
+    }
+
+    .hero {
+        min-height: 450px;
+        padding: 45px 7%;
+    }
+
+    .hero h1 {
+        font-size: 35px;
+    }
+
+    section {
+        padding: 45px 6%;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <div class="logo">💙 Super Women's Club</div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#programs">Programs</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HOME -->
+<div class="hero" id="home">
+    <div class="hero-content">
+        <h1>Empowering Women Through Education & Technology</h1>
+
+        <p>
+        Welcome to Super Women's Club!
+        A community where women learn new skills,
+        discover their potential and build a successful future.
+        </p>
+
+        <a href="#programs" class="btn">Explore Programs</a>
+        <a href="#contact" class="btn">Join Our Community</a>
+    </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about">
+    <div class="about">
+        <img
+        src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=900&q=85"
+        alt="Women collaborating and learning together">
+
+        <div class="about-content">
+            <h2>About Super Women's Club</h2>
+
+            <p>
+            Super Women's Club is an educational and
+            empowerment platform dedicated to helping women
+            learn, grow and achieve their dreams.
+            </p>
+
+            <br>
+
+            <p>
+            We believe every woman has the power to create
+            opportunities and become independent through
+            education, technology, creativity and confidence.
+            </p>
+
+            <br>
+
+            <p>
+            Our mission is to create a supportive community
+            where women inspire and empower one another.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- PROGRAMS -->
+<section class="programs" id="programs">
+
+    <h2 class="section-title">Our Educational Programs</h2>
+
+    <p class="section-desc">
+    Learn practical skills and discover new opportunities
+    through our learning programs.
+    </p>
+
+    <div class="cards">
+
+        <div class="card">
+            <div class="emoji">🤖</div>
+            <h3>Artificial Intelligence</h3>
+            <p>
+            Learn AI tools, prompt engineering and
+            practical AI applications.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="emoji">💻</div>
+            <h3>Digital Skills</h3>
+            <p>
+            Develop computer skills, website designing
+            and digital knowledge.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="emoji">👩‍💼</div>
+            <h3>Entrepreneurship</h3>
+            <p>
+            Learn business skills, marketing strategies
+            and how to start your own business.
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="emoji">🎨</div>
+            <h3>Creative Skills</h3>
+            <p>
+            Explore graphic design, content creation
+            and creative technologies.
+            </p>
+        </div>
+
+    </div>
+</section>
+
+<!-- EMPOWERMENT -->
+<section class="empower">
+
+    <h2>Every Woman Has the Power to Shine!</h2>
+
+    <p>
+    Our vision is to empower women with knowledge,
+    confidence, skills and opportunities.
+    </p>
+
+    <br>
+
+    <h3 style="color:#1261b0;">
+    Learn Together | Grow Together | Succeed Together
+    </h3>
+
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+
+    <h2 class="section-title">Women Empowerment Gallery</h2>
+
+    <p class="section-desc">
+    Celebrating women, learning, leadership,
+    creativity and collaboration.
+    </p>
+
+    <div class="gallery-grid">
+
+        <img
+        src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=700&q=85"
+        alt="Professional woman">
+
+        <img
+        src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=700&q=85"
+        alt="Team collaboration">
+
+        <img
+        src="https://images.unsplash.com/photo-1556761175-b413da4baf72?auto=format&fit=crop&w=700&q=85"
+        alt="Women learning together">
+
+    </div>
+</section>
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+
+    <h2 class="section-title">Join Super Women's Club</h2>
+
+    <p class="section-desc">
+    Ready to learn, grow and achieve more?
+    Connect with us today!
+    </p>
+
+    <div class="contact-box">
+
+        <p>📞 Phone:
+        <a href="tel:1234598765">1234598765</a>
+        </p>
+
+        <p>📧 Email:
+        <a href="mailto:gayatri.alladi@gmail.com">
+        gayatri.alladi@gmail.com
+        </a>
+        </p>
+
+        <p>💙 Let's build a stronger and empowered community!</p>
+
+        <a class="btn"
+        style="background:#1261b0;color:white;"
+        href="https://wa.me/1234598765"
+        target="_blank">
+        Contact on WhatsApp
+        </a>
+
+    </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <h3>💙 Super Women's Club</h3>
+
+    <p>Learn | Empower | Inspire | Achieve</p>
+
+    <p>© 2026 Super Women's Club. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>
